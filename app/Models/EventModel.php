@@ -60,7 +60,7 @@ class EventModel {
 
     }
 
-    //Methode permettant de retourner tt les commu
+    //Methode permettant de retourner tt les event
     public function findAll() {
         $sql = '
         SELECT *
