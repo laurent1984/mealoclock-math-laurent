@@ -3,7 +3,8 @@
 namespace MealOclock;
 
 // Design Pattern : Singleton
-//utilisation de la classe $pdo = database::getPDO;
+// Utilisation de la classe :
+// $pdo = Database::getPDO();
 class Database {
     /** @var \PDO */
     private $dbh;
@@ -11,7 +12,7 @@ class Database {
     private function __construct() {
         // Récupération de la configuration
         $localDbConfig = parse_ini_file(__DIR__.'/config.conf');
-
+        
         try {
             $this->dbh = new \PDO(
                 "mysql:host={$localDbConfig['DB_HOST']};dbname={$localDbConfig['DB_NAME']};charset=utf8",

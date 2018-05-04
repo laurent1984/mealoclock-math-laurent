@@ -26,7 +26,7 @@
         <div class="menu-hover"><a href="<?= $router->generate('main_cgu') ?>">CGU</a></div>
         <div class="menu-hover"><a href="<?= $router->generate('main_faq') ?>">FAQ</a></div>
         <div class="menu-hover"><a href="<?= $router->generate('community_community', ['id' => 42]) ?>">Community 12</a></div>
-        <div class="menu-hover"><a href="<?= $router->generate('event_create') ?>">Create Event</a></div>
+        <div class="menu-hover"><a href="<?= $router->generate('event_list') ?>">&Eacute;vènements</a></div>
         <div class="menu-hover"><i class="fab fa-twitter"></i></div>
         <div class="menu-hover"><i class="fab fa-facebook-f"></i></div>
     </div>
